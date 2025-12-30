@@ -170,7 +170,7 @@ finalize() {
     echo "Next steps:"
     echo ""
     echo "1. Make sure your configuration is correct:"
-    echo "   nano $CONFIG_FILE"
+    echo "   ${EDITOR:-vi} $CONFIG_FILE"
     echo ""
     echo "2. Test the scripts in Raycast:"
     echo "   - Open Raycast (Cmd+Space or your hotkey)"
@@ -181,9 +181,7 @@ finalize() {
     echo "3. Check logs if you encounter issues:"
     echo "   tail -f ~/Library/Logs/zfs-mount.log"
     echo ""
-    echo "For more information, see:"
-    echo "  - $SCRIPT_DIR/README.md (Quick start)"
-    echo "  - $SCRIPT_DIR/docs/README.md (Full documentation)"
+    echo "For more information, see $SCRIPT_DIR/README.md "
     echo ""
 }
 
