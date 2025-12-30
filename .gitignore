@@ -1,0 +1,19 @@
+# Logs
+*.log
+
+# macOS
+.DS_Store
+._*
+
+# User config (should use config.env.example as template)
+config.env
+
+# Backup files
+*.backup.*
+*~
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
